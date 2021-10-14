@@ -12,6 +12,11 @@ function initMap() {
      //2. create a Goole Map object
      console.log('map');
     var point0 =
+     /*navigator.geolocation.getCurrentPosition(position => {
+  const { latitude, longitude } = position.coords;
+0;*/
+  // Show a map centered at latitude / longitude.
+
     
     {
       //lat: 37.774929, lng: -122.419418
@@ -254,5 +259,5 @@ marker1.addListener(
                         );
                     }
                 }
-            );
+           );
         }
