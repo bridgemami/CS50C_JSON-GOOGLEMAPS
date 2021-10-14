@@ -1,0 +1,68 @@
+[
+  {
+		"city": "Paris, France",
+		"lat": 48.856613,
+		"long": 2.352222,
+		"note": "<h4>Paris, France</h4><p>I visited Paris in 2000, 2009, 2012, 2018 and 2020.</p>"
+	},
+	{
+		"city": "Madrid, Spain",
+		"lat": 40.416775,
+		"long": -3.703790,
+		"note": "<h4>Madrid, Spain</h4><p>I visited Madrid in 2009, 2016 and 2018.</p>"
+	},
+	{
+		"city": "Istanbul, Turkey",
+		"lat": 41.008240,
+		"long": 28.978359,
+		"note": "<h4>Istanbul, Turkey</h4><p>I visited Istanbul in 2014.</p>"
+	},
+	{
+		"city": "Munich, Germany",
+		"lat": 48.135124,
+		"long": 11.581981,
+		"note": "<h4>Munich, Germany</h4><p>Ivisited Munich in 2009 and 2016.</p>"
+	},
+	{
+		"city": "Buenos Aires, Argentina",
+		"lat": -34.603683,
+		"long": -58.381557,
+		"note": "<h4>Buenos Aires, Argentina</h4><p>I visited Buenos Aires in 2019.</p>"
+	},
+	{
+		"city": "Amsterdam, Netherlands",
+		"lat": 52.373169,
+		"long": 4.890660,
+		"note": "<h4>Amsterdam, Netherlands</h4><p>I visited Amsterdam in 2009, 2012 and 2020.</p>"
+	},
+	{
+		"city": "Brugge, Beligium",
+		"lat": 51.209419,
+		"long": 3.225200,
+		"note": "<h4>Brugge, Beligium</h4><p>I visited Brugge in 2009, 2012 and 2018.</p>"
+	},
+	{
+		"city": "Rome, Italy",
+		"lat": 41.902782,
+		"long": 12.496365,
+		"note": "<h4>Rome, Italy</h4><p>I  visited Rome in 2000 and 2009.</p>"
+	},
+	{
+		"city": "Dublin, Ireland",
+		"lat": 53.349804,
+		"long": -6.260310,
+		"note": "<h4>Dublin, Ireland</h4><p>I visited Dublin in 2016.</p>"
+	},
+	{
+		"city": "Prague, Czech Republic",
+		"lat": 50.075539,
+		"long": 14.437800,
+		"note": "<h4>Prague, Czech Republic</h4><p>I visited Prague in 2009.</p>"
+	},
+  {
+		"city": "London, England",
+		"lat": 51.507351,
+		"long": -0.127758,
+		"note": "<h4>Home Marker</h4>"
+	}
+]
