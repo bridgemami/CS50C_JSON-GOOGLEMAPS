@@ -1,5 +1,7 @@
 var map, markers;
 function initMap() {
+  console.log("begin geo")
+         
   console.log('getting json data');
   $.getJSON("city.json", function(jsonData) {
     console.log('got the JSON');
@@ -8,12 +10,6 @@ function initMap() {
      //2. create a Goole Map object
      console.log('map');
     var point0 =
-     /*navigator.geolocation.getCurrentPosition(position => {
-  const { latitude, longitude } = position.coords;
-0;*/
-  // Show a map centered at latitude / longitude.
-
-    
     {
       //lat: 37.774929, lng: -122.419418
       lat: jsonData[10].lat, lng: jsonData[10].long
@@ -21,7 +17,7 @@ function initMap() {
     };
 map = new google.maps.Map(document.getElementById('map'), {
   center: point0,
-  zoom: 6,
+  zoom: 3,
   styles: [
     {
         "featureType": "water",
@@ -254,6 +250,81 @@ marker1.addListener(
       }
                         );
                     }
+                 if ( navigator.geolocation ) {
+               console.log("geo");     
+                    // now we can perform the steps in javascript to create the map
+                    navigator.geolocation.getCurrentPosition(
+                        // the anonymous function we pass to getCurrentPosition()
+                        // runs once the browser finds its own lat/long
+                        // it returns that value in a argument passed to our function
+                        function(position) {
+                            // step 1. define the geocoord (lat,long) for the center first
+                            var geocoord1 = {
+                                // copy the browser geocoord lat 
+                                lat: position.coords.latitude,
+                                // copy the browser geocoord long
+                                lng: position.coords.longitude
+                            };
+                            
+                            // step 2. create a google Map object
+                            /*var map2 = new google.maps.Map(
+                                // tell gmap the html element to draw map inside of
+                                document.getElementById('map'),
+                                {
+                                    // provide the center in latitude and longitude
+                                    center: geocoord1
+                                    // set the zoom level for the map
+                                    //zoom: 13
+                                }
+                            );*/ console.log("custom")
+                            /*const cmarker = {
+    path: "hand-index-thumb.svg",
+    fillColor: "blue",
+    
+    strokeWeight: 0,
+    rotation: 0,
+    scale: 2,
+    anchor: new google.maps.Point(15, 30),
+  }; console.log('end custom')*/
+                            // step 3. create a marker that is placed on the map
+                            var marker2 = new google.maps.Marker(
+                                {
+                                    // 1. the position of the marker geocoord
+                                    position: geocoord1,
+                                    // 2. which google map js var to place marker inside
+                                    map: map,
+                                    // 3. title to show when user points at marker
+                                    title: 'Home',
+                                    //icon: cmarker
+                                    icon: 'hand-index-thumb.svg'
+                                }
+                            ); console.log("click");
+var infobox = new google.maps.InfoWindow(
+  {
+    content: "<h3>Current Location</h3>"
+  }
+);
+marker2.addListener(
+  //1 kind of event as a string
+  'click',
+  //2.a block of code contained in a function to run when the event happens
+  function() {
+    //tell the info window to open inside of our map
+    infobox.open(
+      //1.the map to open inside of
+      map,
+      //2 the point/marker to open the window at
+      marker2
+    );
+  }
+);                            
+
+                        }
+                    );
+               }
+            //}
+console.log("end geo");   
                 }
-           );
+           ) 
+           
         }
