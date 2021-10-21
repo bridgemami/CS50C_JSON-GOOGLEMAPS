@@ -13,11 +13,12 @@ function initMap() {
     {
       //lat: 37.774929, lng: -122.419418
       lat: jsonData[10].lat, lng: jsonData[10].long
-    
+      
     };
 map = new google.maps.Map(document.getElementById('map'), {
   center: point0,
-  zoom: 3,
+  zoom: 7,
+  icon: 'hand-index-thumb.svg',
   styles: [
     {
         "featureType": "water",
@@ -204,12 +205,13 @@ map = new google.maps.Map(document.getElementById('map'), {
     //2. which google map js var to place marker inside
     map: map,
     //3.title to show when user points at marker
-    title: "Home Base"
+    title: "Home Base",
+    //icon: 'hand-index-thumb.svg'
   }
 );
 var infobox = new google.maps.InfoWindow(
   {
-    content: "<h3>Home Base</h3>"
+    //content: "<h3>Home Base</h3>"
   }
 );
 marker1.addListener(

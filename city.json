@@ -60,9 +60,9 @@
 		"note": "<h4>Prague, Czech Republic</h4><p>I visited Prague in 2009.</p>"
 	},
   {
-		"city": "London, England",
-		"lat": 51.507351,
-		"long": -0.127758,
-		"note": "<h4>Home Marker</h4>"
+		"city": "Brussels, Belgium",
+		"lat": 50.8503,
+		"long": 4.3517,
+		"note": "<h4>Home Base</h4>"
 	}
 ]
